@@ -1,0 +1,12 @@
+services:
+  hello-dev:
+    container_name: hello-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /bin/sh -c "sleep infinity"
+    volumes:
+      - ../:/src
+      - ${HOME:-$USERPROFILE}/.ssh:/root/.ssh:ro
+    env_file:
+      - .env
