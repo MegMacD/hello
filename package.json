@@ -1,0 +1,19 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "Simple test repo for npm github actions",
+  "keywords": [
+    "test",
+    "npm",
+    "package",
+    "demo"
+  ],
+  "license": "ISC",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install"
+},
+"dependencies": {}
+}
+
