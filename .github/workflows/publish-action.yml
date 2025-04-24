@@ -23,5 +23,5 @@ jobs:
         with:
           packageRegistryUsername: MegMacD
           packageRegistryPassword: ${{ secrets.GITHUB_TOKEN }}
-          projectDirectory: /
+          projectDirectory: ../../
           version: 1.0.0
