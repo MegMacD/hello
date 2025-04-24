@@ -1,7 +1,10 @@
 {
-  "name": "hello",
+  "name": "@MegMacD/hello",
   "version": "1.0.0",
   "description": "Simple test repo for npm github actions",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
   "keywords": [
     "test",
     "npm",
@@ -13,7 +16,6 @@
   "main": "index.js",
   "scripts": {
     "build": "npm install"
-},
+  },
 "dependencies": {}
 }
-
