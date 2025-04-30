@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: spritely/actions.publish-npm@v0.1.0
+      - uses: spritely/actions.publish-npm@add-github-auth
         with:
           packageRegistryUsername: MegMacD
           packageRegistryPassword: ${{ secrets.GITHUB_TOKEN }}
