@@ -6,8 +6,9 @@ name: npm-publish
 on: [push, workflow_dispatch]
 
 permissions:
-    packages: write
-
+  packages: write
+  contents: read
+    
 jobs:
   publish:
     runs-on: ubuntu-latest
