@@ -5,6 +5,9 @@ name: npm-publish
 # Controls when the workflow will run
 on: [push, workflow_dispatch]
 
+permissions:
+    packages: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -13,6 +16,7 @@ jobs:
 
       - uses: spritely/actions.publish-npm@add-github-auth
         with:
+          packageRegistry: https://npm.pkg.github.com/${{ github.repository_owner }}
           packageRegistryToken: ${{ secrets.GITHUB_TOKEN }}
           projectDirectory: ./
           version: 1.0.0
