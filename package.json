@@ -1,5 +1,5 @@
 {
-  "name": "hello",
+  "name": "@megmacd/hello",
   "version": "1.0.0",
   "description": "Simple test repo for npm github actions",
   "publishConfig": {
