@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: spritely/actions.publish-npm@add-github-auth
+      - uses: spritely/actions.publish-npm@fix-verdaccio
         with:
           packageRegistry: https://npm.pkg.github.com/
           packageRegistryToken: ${{ secrets.GITHUB_TOKEN }}
